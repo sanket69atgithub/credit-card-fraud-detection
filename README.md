@@ -44,9 +44,3 @@ pip install numpy pandas matplotlib scikit-learn
    - **Random Forest Classifier**
 4. **Evaluation**: Both models achieved over 99.9% accuracy. A confusion matrix is also plotted to give a better breakdown of true positives vs false positives, which is a lot more useful than just looking at accuracy for an imbalanced dataset like this.
 
-## How to run
-
-1. Clone this repository.
-2. Make sure you have the required libraries installed.
-3. Open `credit_card_fraud.ipynb` in Jupyter Notebook or JupyterLab.
-4. Run the cells from top to bottom. Make sure `creditcard.csv` is in the same directory as the notebook.
