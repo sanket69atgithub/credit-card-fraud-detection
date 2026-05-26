@@ -11,7 +11,16 @@ To tackle this, the project does some basic exploratory data analysis (EDA), sca
 ## What's in the repo?
 
 - `credit_card_fraud.ipynb`: The main Jupyter Notebook containing all the code for data processing, EDA, model training, and evaluation.
-- `creditcard.csv`: The dataset used for training (Note: this file is quite large, ~150MB).
+- `.gitignore`: Ensures we don't accidentally push the massive dataset or unnecessary Python/Jupyter files to the repo.
+
+*(Note: The `creditcard.csv` dataset is roughly 150MB, which exceeds GitHub's file size limits, so it is not included in this repository. See the instructions below on how to get it.)*
+
+## Dataset
+
+You will need the **Credit Card Fraud Detection dataset** to run this project. 
+1. Download it from Kaggle: [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+2. Extract the downloaded archive.
+3. Place the `creditcard.csv` file directly into the root folder of this project.
 
 ## Libraries Used
 
@@ -35,3 +44,9 @@ pip install numpy pandas matplotlib scikit-learn
    - **Random Forest Classifier**
 4. **Evaluation**: Both models achieved over 99.9% accuracy. A confusion matrix is also plotted to give a better breakdown of true positives vs false positives, which is a lot more useful than just looking at accuracy for an imbalanced dataset like this.
 
+## How to run
+
+1. Clone this repository.
+2. Make sure you have the required libraries installed.
+3. Open `credit_card_fraud.ipynb` in Jupyter Notebook or JupyterLab.
+4. Run the cells from top to bottom. Make sure `creditcard.csv` is in the same directory as the notebook.
